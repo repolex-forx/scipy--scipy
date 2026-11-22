@@ -1,0 +1,42 @@
+[2026-11-22T16:03:56Z] === ENRICH ITERATION 3 START | repo=scipy/scipy sha=527eb7fd ===
+[2026-11-22T16:03:56Z] [iter=3] PHASE START: enrich repo=scipy/scipy sha=527eb7fd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/527eb7fd-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae.nq.gz
+[2026-11-22T16:04:29Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-11-22T16:12:03Z] [iter=3] AST store loaded triples=27346828 load_secs=448 mem_mb=1123 MB
+[2026-11-22T16:12:03Z] [iter=3] Step 2: Finding LSP targets mem_mb=1123 MB
+[2026-11-22T16:12:59Z] [iter=3] LSP targets found call_sites=207660 imports=4955 extends=1284 implements=0 secs=55
+[2026-11-22T16:13:01Z] [iter=3] Loaded checkpoint partial graph triples=56616
+[2026-11-22T16:13:01Z] [iter=3] Primed enclosing-def cache from persisted triples entries=608
+[2026-11-22T16:13:43Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1123 MB
+[2026-11-22T16:15:36Z] [iter=3] Position index built positions=1745951 nodes_with_types=2198353 secs=113 mem_mb=3893 MB
+[2026-11-22T16:15:36Z] [iter=3] Step 3: Starting LSP resolution mem_mb=3893 MB already_completed_types=[] already_completed_files=19
+[2026-11-22T16:15:36Z] [iter=3] Resolving target type target_type=call_site count=207660
+[2026-11-22T16:15:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.7 files_done=0 resolved=0 errors=0 current=scipy/linalg/_matfuncs_expm.c
+[2026-11-22T16:36:26Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=32.5 files_done=1 resolved=452 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/ilu_ddrop_row.c
+[2026-11-22T16:37:53Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=34.0 files_done=2 resolved=477 errors=0 current=scipy/linalg/_matfuncs_sqrtm.c
+[2026-11-22T16:40:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=36.9 files_done=3 resolved=547 errors=0 current=scipy/sparse/linalg/_propack/_propackmodule.c
+[2026-11-22T16:42:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=38.1 files_done=4 resolved=559 errors=0 current=scipy/special/boost_special_functions.h
+[2026-11-22T16:56:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=52.8 files_done=5 resolved=809 errors=0 current=scipy/sparse/linalg/_propack/PROPACK/src/gemm_overwrite.c
+[2026-11-22T16:58:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=54.5 files_done=6 resolved=833 errors=0 current=scipy/_lib/_uarray/_uarray_dispatch.cxx
+[2026-11-22T17:09:21Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=65.4 files_done=7 resolved=954 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/cgscon.c
+[2026-11-22T17:10:19Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=66.4 files_done=8 resolved=965 errors=0 current=scipy/interpolate/src/_dierckxmodule.cc
+[2026-11-22T17:12:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=68.3 files_done=9 resolved=999 errors=0 current=scipy/ndimage/src/ni_fourier.c
+[2026-11-22T17:18:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=74.9 files_done=10 resolved=1071 errors=0 current=scipy/special/ellint_carlson_cpp_lite/_rd.hh
+[2026-11-22T17:21:55Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=78.0 files_done=11 resolved=1114 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/sgsrfs.c
+[2026-11-22T17:24:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=80.9 files_done=12 resolved=1162 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/zsp_blas2.c
+[2026-11-22T17:37:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=93.5 files_done=13 resolved=1316 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/zgsitrf.c
+[2026-11-22T17:43:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=100.0 files_done=14 resolved=1389 errors=0 current=scipy/spatial/src/distance_wrap.c
+[2026-11-22T17:45:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=102.0 files_done=15 resolved=1424 errors=0 current=subprojects/qhull_r/libqhull_r/stat_r.c
+[2026-11-22T18:23:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=139.2 files_done=16 resolved=1793 errors=0 current=scipy/fft/_pocketfft/pypocketfft.cxx
+[2026-11-22T18:29:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=145.9 files_done=17 resolved=1853 errors=0 current=scipy/sparse/sparsetools/csr.h
+[2026-11-22T18:32:53Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=149.0 files_done=18 resolved=1913 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/get_perm_c.c
+[2026-11-22T18:40:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=156.9 files_done=19 resolved=1996 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/sreadMM.c
+[2026-11-22T18:41:51Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=157.9 files_done=20 resolved=2051 errors=0 current=scipy/integrate/src/lsoda.h
+[2026-11-22T19:04:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=180.9 files_done=22 resolved=2285 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/dgsrfs.c
+[2026-11-22T19:07:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=183.8 files_done=23 resolved=2333 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/creadrb.c
+[2026-11-22T19:11:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=187.3 files_done=24 resolved=2406 errors=0 current=scipy/special/cdflib.c
+[2026-11-22T19:33:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=209.7 files_done=25 resolved=2954 errors=0 current=scipy/ndimage/src/ni_filters.c
+[2026-11-22T19:48:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=224.5 files_done=26 resolved=3111 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/colamd.c
+[2026-11-22T20:04:43Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=240.8 files_completed=45 new_files_this_iter=26 mem_mb=3927 MB
+[2026-11-22T20:04:43Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae.nq.gz triples=82719
+[2026-11-22T20:04:43Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-22T20:04:43Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=14447 elapsed_min=240.8 files_completed=45
