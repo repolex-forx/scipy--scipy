@@ -1,0 +1,29 @@
+[2026-11-22T12:00:20Z] === ENRICH ITERATION 2 START | repo=scipy/scipy sha=527eb7fd ===
+[2026-11-22T12:00:20Z] [iter=2] PHASE START: enrich repo=scipy/scipy sha=527eb7fd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/527eb7fd-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae.nq.gz
+[2026-11-22T12:00:52Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-11-22T12:08:17Z] [iter=2] AST store loaded triples=27346828 load_secs=439 mem_mb=1118 MB
+[2026-11-22T12:08:17Z] [iter=2] Step 2: Finding LSP targets mem_mb=1118 MB
+[2026-11-22T12:09:05Z] [iter=2] LSP targets found call_sites=207660 imports=4955 extends=1284 implements=0 secs=48
+[2026-11-22T12:09:07Z] [iter=2] Loaded checkpoint partial graph triples=38819
+[2026-11-22T12:09:07Z] [iter=2] Primed enclosing-def cache from persisted triples entries=289
+[2026-11-22T12:09:44Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1118 MB
+[2026-11-22T12:11:30Z] [iter=2] Position index built positions=1745951 nodes_with_types=2198353 secs=106 mem_mb=3693 MB
+[2026-11-22T12:11:30Z] [iter=2] Step 3: Starting LSP resolution mem_mb=3693 MB already_completed_types=[] already_completed_files=6
+[2026-11-22T12:11:30Z] [iter=2] Resolving target type target_type=call_site count=207660
+[2026-11-22T12:11:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.2 files_done=0 resolved=0 errors=0 current=subprojects/qhull_r/libqhull_r/merge_r.c
+[2026-11-22T13:11:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=71.3 files_done=1 resolved=620 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/dgstrs.c
+[2026-11-22T13:15:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=75.3 files_done=2 resolved=666 errors=0 current=scipy/special/ellint_carlson_cpp_lite/_rj.hh
+[2026-11-22T13:24:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=84.3 files_done=3 resolved=817 errors=0 current=scipy/special/_gufuncs.cpp
+[2026-11-22T13:28:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=87.9 files_done=5 resolved=892 errors=0 current=scipy/optimize/_trlib/trlib_tri_factor.c
+[2026-11-22T13:48:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=108.0 files_done=6 resolved=1103 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/smemory.c
+[2026-11-22T13:56:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=116.6 files_done=7 resolved=1199 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/zgsisx.c
+[2026-11-22T14:02:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=122.6 files_done=8 resolved=1267 errors=0 current=subprojects/qhull_r/libqhull_r/poly2_r.c
+[2026-11-22T15:23:17Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=202.9 files_done=9 resolved=2083 errors=0 current=scipy/sparse/linalg/_propack/PROPACK/src/gs.c
+[2026-11-22T15:25:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=205.6 files_done=10 resolved=2107 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/cgsisx.c
+[2026-11-22T15:31:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=211.2 files_done=11 resolved=2175 errors=0 current=scipy/ndimage/src/ni_morphology.c
+[2026-11-22T15:42:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=222.4 files_done=12 resolved=2287 errors=0 current=scipy/sparse/linalg/_eigen/arpack/arnaud/src/arnaud_n_double_complex.c
+[2026-11-22T15:56:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=236.7 files_done=13 resolved=2472 errors=0 current=scipy/linalg/_matfuncs_expm.c
+[2026-11-22T16:00:41Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=240.3 files_completed=19 new_files_this_iter=13 mem_mb=3717 MB
+[2026-11-22T16:00:41Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae.nq.gz triples=56616
+[2026-11-22T16:00:42Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-11-22T16:00:42Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=14421 elapsed_min=240.3 files_completed=19
