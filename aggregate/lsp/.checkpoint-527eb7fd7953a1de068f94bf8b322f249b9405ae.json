@@ -1,0 +1,32 @@
+{
+  "commit_sha": "527eb7fd7953a1de068f94bf8b322f249b9405ae",
+  "completed_files": [
+    "scipy/linalg/src/_linalg_inv.hh",
+    "scipy/sparse/linalg/_dsolve/SuperLU/SRC/ilu_sdrop_row.c",
+    "scipy/sparse/linalg/_dsolve/SuperLU/SRC/sgsitrf.c",
+    "scipy/sparse/linalg/_eigen/arpack/arnaud/src/arnaud_n_single.c",
+    "subprojects/qhull_r/libqhull_r/geom2_r.c",
+    "subprojects/qhull_r/libqhull_r/global_r.c"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/scipy/scipy/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae.nq.gz",
+    "call_sites": 207660,
+    "import_statements": 4955,
+    "call_targets_resolved": 1768,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 0,
+    "extends_clauses": 1284,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 8427,
+    "import_symbols_denormalized": 9298,
+    "extends_class_denormalized": 1249,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14469
+}
