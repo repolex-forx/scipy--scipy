@@ -3040,6 +3040,13 @@
         "blob/a31caee71440d43fdb3d93633d444f960f71ef2e.nq.gz",
         "blob/21d51ba05cbccbce1083be7ce27433b02d1b7027.nq.gz",
         "blob/d005133101ed9b5447869538aad190c99ea89f55.nq.gz"
+      ],
+      "ast": [
+        "aggregate/ast/527eb7fd7953a1de068f94bf8b322f249b9405ae/chunk-001.nq.gz",
+        "aggregate/ast/527eb7fd7953a1de068f94bf8b322f249b9405ae/chunk-002.nq.gz",
+        "aggregate/ast/527eb7fd7953a1de068f94bf8b322f249b9405ae/chunk-003.nq.gz",
+        "aggregate/ast/527eb7fd7953a1de068f94bf8b322f249b9405ae/chunk-004.nq.gz",
+        "aggregate/ast/527eb7fd7953a1de068f94bf8b322f249b9405ae/chunk-005.nq.gz"
       ]
     }
   ],
