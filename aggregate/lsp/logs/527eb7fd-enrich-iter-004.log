@@ -1,0 +1,26 @@
+[2026-11-22T20:06:53Z] === ENRICH ITERATION 4 START | repo=scipy/scipy sha=527eb7fd ===
+[2026-11-22T20:06:53Z] [iter=4] PHASE START: enrich repo=scipy/scipy sha=527eb7fd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/527eb7fd-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae.nq.gz
+[2026-11-22T20:07:22Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T20:13:47Z] [iter=4] AST store loaded triples=27346828 load_secs=375 mem_mb=1093 MB
+[2026-11-22T20:13:47Z] [iter=4] Step 2: Finding LSP targets mem_mb=1093 MB
+[2026-11-22T20:15:11Z] [iter=4] LSP targets found call_sites=207660 imports=4955 extends=1284 implements=0 secs=83
+[2026-11-22T20:15:15Z] [iter=4] Loaded checkpoint partial graph triples=82719
+[2026-11-22T20:15:15Z] [iter=4] Primed enclosing-def cache from persisted triples entries=1043
+[2026-11-22T20:16:15Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1093 MB
+[2026-11-22T20:19:43Z] [iter=4] Position index built positions=1745951 nodes_with_types=2198353 secs=208 mem_mb=3906 MB
+[2026-11-22T20:19:43Z] [iter=4] Step 3: Starting LSP resolution mem_mb=3906 MB already_completed_types=[] already_completed_files=45
+[2026-11-22T20:19:43Z] [iter=4] Resolving target type target_type=call_site count=207660
+[2026-11-22T20:19:47Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=0 resolved=0 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/colamd.c
+[2026-11-22T20:42:51Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=36.0 files_done=1 resolved=133 errors=0 current=scipy/special/_special_ufuncs.cpp
+[2026-11-22T21:32:44Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=85.9 files_done=3 resolved=429 errors=0 current=scipy/io/_fast_matrix_market/src/_fmm_core.hpp
+[2026-11-22T21:34:40Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=87.8 files_done=4 resolved=447 errors=0 current=scipy/ndimage/src/ni_measure.c
+[2026-11-22T21:49:20Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=102.4 files_done=5 resolved=531 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/ccolumn_bmod.c
+[2026-11-22T21:55:23Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=108.5 files_done=6 resolved=567 errors=0 current=subprojects/qhull_r/libqhull_r/libqhull_r.c
+[2026-11-22T23:17:43Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=190.8 files_done=7 resolved=1035 errors=0 current=scipy/signal/_correlate_nd.cc
+[2026-11-22T23:26:25Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=199.5 files_done=9 resolved=1087 errors=0 current=scipy/integrate/src/lsoda.c
+[2026-11-22T23:48:21Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=221.5 files_done=10 resolved=1312 errors=0 current=scipy/integrate/_dzvodemodule.c
+[2026-11-22T23:57:21Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=230.5 files_done=11 resolved=1363 errors=0 current=scipy/optimize/__minpack.c
+[2026-11-23T00:07:28Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=240.6 files_completed=56 new_files_this_iter=11 mem_mb=3922 MB
+[2026-11-23T00:07:28Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/527eb7fd7953a1de068f94bf8b322f249b9405ae.nq.gz triples=94974
+[2026-11-23T00:07:29Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-11-23T00:07:29Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=14435 elapsed_min=240.6 files_completed=56
