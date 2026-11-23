@@ -1,0 +1,17 @@
+[2026-11-23T10:01:26Z] === ENRICH ITERATION 8 START | repo=scipy/scipy sha=2ff870db ===
+[2026-11-23T10:01:26Z] [iter=8] PHASE START: enrich repo=scipy/scipy sha=2ff870db runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2ff870db-enrich-iter-008.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz
+[2026-11-23T10:02:02Z] [iter=8] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T10:07:49Z] [iter=8] AST store loaded triples=27320830 load_secs=336 mem_mb=1075 MB
+[2026-11-23T10:07:49Z] [iter=8] Step 2: Finding LSP targets mem_mb=1075 MB
+[2026-11-23T10:09:06Z] [iter=8] LSP targets found call_sites=207425 imports=4953 extends=1284 implements=0 secs=77
+[2026-11-23T10:09:07Z] [iter=8] Loaded checkpoint partial graph triples=36364
+[2026-11-23T10:09:07Z] [iter=8] Primed enclosing-def cache from persisted triples entries=244
+[2026-11-23T10:10:06Z] [iter=8] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1075 MB
+[2026-11-23T10:12:55Z] [iter=8] Position index built positions=1744265 nodes_with_types=2196203 secs=169 mem_mb=3795 MB
+[2026-11-23T10:12:55Z] [iter=8] Step 3: Starting LSP resolution mem_mb=3795 MB already_completed_types=[] already_completed_files=5
+[2026-11-23T10:12:55Z] [iter=8] Resolving target type target_type=call_site count=207425
+[2026-11-23T10:12:58Z] [iter=8] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=0 resolved=0 errors=0 current=subprojects/qhull_r/libqhull_r/merge_r.c
+[2026-11-23T10:32:43Z] [iter=8] CHECKPOINT TRIGGERED elapsed_min=31.3 files_completed=5 new_files_this_iter=0 mem_mb=3803 MB
+[2026-11-23T10:32:43Z] [iter=8] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz triples=37114
+[2026-11-23T10:32:43Z] [iter=8] Checkpoint written, exiting with code 7
+[2026-11-23T10:32:43Z] [iter=8] PHASE END: enrich (checkpointed) elapsed_s=1877 elapsed_min=31.3 files_completed=5
