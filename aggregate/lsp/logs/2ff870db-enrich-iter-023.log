@@ -1,0 +1,20 @@
+[2026-11-23T18:24:07Z] === ENRICH ITERATION 23 START | repo=scipy/scipy sha=2ff870db ===
+[2026-11-23T18:24:07Z] [iter=23] PHASE START: enrich repo=scipy/scipy sha=2ff870db runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2ff870db-enrich-iter-023.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz
+[2026-11-23T18:24:43Z] [iter=23] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T18:32:46Z] [iter=23] AST store loaded triples=27320830 load_secs=475 mem_mb=997 MB
+[2026-11-23T18:32:46Z] [iter=23] Step 2: Finding LSP targets mem_mb=997 MB
+[2026-11-23T18:33:48Z] [iter=23] LSP targets found call_sites=207425 imports=4953 extends=1284 implements=0 secs=61
+[2026-11-23T18:33:50Z] [iter=23] Loaded checkpoint partial graph triples=54258
+[2026-11-23T18:33:50Z] [iter=23] Primed enclosing-def cache from persisted triples entries=510
+[2026-11-23T18:34:36Z] [iter=23] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=997 MB
+[2026-11-23T18:36:49Z] [iter=23] Position index built positions=1744265 nodes_with_types=2196203 secs=133 mem_mb=3781 MB
+[2026-11-23T18:36:49Z] [iter=23] Step 3: Starting LSP resolution mem_mb=3781 MB already_completed_types=[] already_completed_files=15
+[2026-11-23T18:36:49Z] [iter=23] Resolving target type target_type=call_site count=207425
+[2026-11-23T18:36:51Z] [iter=23] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=0 resolved=0 errors=0 current=subprojects/qhull_r/libqhull_r/geom2_r.c
+[2026-11-23T18:38:15Z] [iter=23] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=1 resolved=11 errors=0 current=scipy/optimize/__minpack.h
+[2026-11-23T18:43:52Z] [iter=23] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=2 resolved=51 errors=0 current=scipy/io/_fast_matrix_market/fast_matrix_market/include/fast_matrix_market/field_conv.hpp
+[2026-11-23T18:52:49Z] [iter=23] HEARTBEAT target_type=call_site elapsed_min=28.7 files_done=3 resolved=130 errors=0 current=scipy/special/_special_ufuncs.cpp
+[2026-11-23T18:54:23Z] [iter=23] CHECKPOINT TRIGGERED elapsed_min=30.3 files_completed=19 new_files_this_iter=4 mem_mb=3791 MB
+[2026-11-23T18:54:23Z] [iter=23] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz triples=56582
+[2026-11-23T18:54:24Z] [iter=23] Checkpoint written, exiting with code 7
+[2026-11-23T18:54:24Z] [iter=23] PHASE END: enrich (checkpointed) elapsed_s=1816 elapsed_min=30.3 files_completed=19
