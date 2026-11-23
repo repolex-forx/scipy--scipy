@@ -1,0 +1,17 @@
+[2026-11-23T17:51:12Z] === ENRICH ITERATION 22 START | repo=scipy/scipy sha=2ff870db ===
+[2026-11-23T17:51:12Z] [iter=22] PHASE START: enrich repo=scipy/scipy sha=2ff870db runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2ff870db-enrich-iter-022.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz
+[2026-11-23T17:51:49Z] [iter=22] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-11-23T18:00:21Z] [iter=22] AST store loaded triples=27320830 load_secs=503 mem_mb=998 MB
+[2026-11-23T18:00:21Z] [iter=22] Step 2: Finding LSP targets mem_mb=998 MB
+[2026-11-23T18:01:30Z] [iter=22] LSP targets found call_sites=207425 imports=4953 extends=1284 implements=0 secs=69
+[2026-11-23T18:01:32Z] [iter=22] Loaded checkpoint partial graph triples=53404
+[2026-11-23T18:01:32Z] [iter=22] Primed enclosing-def cache from persisted triples entries=501
+[2026-11-23T18:02:22Z] [iter=22] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=998 MB
+[2026-11-23T18:04:41Z] [iter=22] Position index built positions=1744265 nodes_with_types=2196203 secs=138 mem_mb=3718 MB
+[2026-11-23T18:04:41Z] [iter=22] Step 3: Starting LSP resolution mem_mb=3718 MB already_completed_types=[] already_completed_files=15
+[2026-11-23T18:04:41Z] [iter=22] Resolving target type target_type=call_site count=207425
+[2026-11-23T18:04:43Z] [iter=22] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=0 resolved=0 errors=0 current=subprojects/qhull_r/libqhull_r/geom2_r.c
+[2026-11-23T18:21:42Z] [iter=22] CHECKPOINT TRIGGERED elapsed_min=30.5 files_completed=15 new_files_this_iter=0 mem_mb=3726 MB
+[2026-11-23T18:21:42Z] [iter=22] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz triples=54258
+[2026-11-23T18:21:43Z] [iter=22] Checkpoint written, exiting with code 7
+[2026-11-23T18:21:43Z] [iter=22] PHASE END: enrich (checkpointed) elapsed_s=1831 elapsed_min=30.5 files_completed=15
