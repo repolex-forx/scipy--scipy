@@ -1,0 +1,17 @@
+[2026-11-23T21:44:44Z] === ENRICH ITERATION 29 START | repo=scipy/scipy sha=2ff870db ===
+[2026-11-23T21:44:44Z] [iter=29] PHASE START: enrich repo=scipy/scipy sha=2ff870db runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2ff870db-enrich-iter-029.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz
+[2026-11-23T21:45:15Z] [iter=29] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T21:51:30Z] [iter=29] AST store loaded triples=27320830 load_secs=365 mem_mb=1013 MB
+[2026-11-23T21:51:30Z] [iter=29] Step 2: Finding LSP targets mem_mb=1013 MB
+[2026-11-23T21:52:48Z] [iter=29] LSP targets found call_sites=207425 imports=4953 extends=1284 implements=0 secs=78
+[2026-11-23T21:52:52Z] [iter=29] Loaded checkpoint partial graph triples=63157
+[2026-11-23T21:52:52Z] [iter=29] Primed enclosing-def cache from persisted triples entries=739
+[2026-11-23T21:53:49Z] [iter=29] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1013 MB
+[2026-11-23T21:57:12Z] [iter=29] Position index built positions=1744265 nodes_with_types=2196203 secs=203 mem_mb=3841 MB
+[2026-11-23T21:57:12Z] [iter=29] Step 3: Starting LSP resolution mem_mb=3841 MB already_completed_types=[] already_completed_files=22
+[2026-11-23T21:57:12Z] [iter=29] Resolving target type target_type=call_site count=207425
+[2026-11-23T21:57:16Z] [iter=29] HEARTBEAT target_type=call_site elapsed_min=12.5 files_done=0 resolved=0 errors=0 current=scipy/integrate/src/lsoda.c
+[2026-11-23T22:14:53Z] [iter=29] CHECKPOINT TRIGGERED elapsed_min=30.1 files_completed=22 new_files_this_iter=0 mem_mb=3849 MB
+[2026-11-23T22:14:53Z] [iter=29] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz triples=64580
+[2026-11-23T22:14:54Z] [iter=29] Checkpoint written, exiting with code 7
+[2026-11-23T22:14:54Z] [iter=29] PHASE END: enrich (checkpointed) elapsed_s=1808 elapsed_min=30.1 files_completed=22
