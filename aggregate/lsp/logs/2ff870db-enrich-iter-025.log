@@ -1,0 +1,17 @@
+[2026-11-23T19:31:59Z] === ENRICH ITERATION 25 START | repo=scipy/scipy sha=2ff870db ===
+[2026-11-23T19:31:59Z] [iter=25] PHASE START: enrich repo=scipy/scipy sha=2ff870db runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2ff870db-enrich-iter-025.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz
+[2026-11-23T19:32:43Z] [iter=25] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T19:38:44Z] [iter=25] AST store loaded triples=27320830 load_secs=353 mem_mb=1016 MB
+[2026-11-23T19:38:44Z] [iter=25] Step 2: Finding LSP targets mem_mb=1016 MB
+[2026-11-23T19:40:00Z] [iter=25] LSP targets found call_sites=207425 imports=4953 extends=1284 implements=0 secs=76
+[2026-11-23T19:40:03Z] [iter=25] Loaded checkpoint partial graph triples=57698
+[2026-11-23T19:40:03Z] [iter=25] Primed enclosing-def cache from persisted triples entries=595
+[2026-11-23T19:40:58Z] [iter=25] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1016 MB
+[2026-11-23T19:43:48Z] [iter=25] Position index built positions=1744265 nodes_with_types=2196203 secs=170 mem_mb=3775 MB
+[2026-11-23T19:43:48Z] [iter=25] Step 3: Starting LSP resolution mem_mb=3775 MB already_completed_types=[] already_completed_files=20
+[2026-11-23T19:43:48Z] [iter=25] Resolving target type target_type=call_site count=207425
+[2026-11-23T19:43:51Z] [iter=25] HEARTBEAT target_type=call_site elapsed_min=11.9 files_done=0 resolved=0 errors=0 current=scipy/io/_fast_matrix_market/fast_matrix_market/dependencies/fast_float/include/fast_float/fast_float.h
+[2026-11-23T20:02:13Z] [iter=25] CHECKPOINT TRIGGERED elapsed_min=30.2 files_completed=20 new_files_this_iter=0 mem_mb=3783 MB
+[2026-11-23T20:02:13Z] [iter=25] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz triples=58986
+[2026-11-23T20:02:14Z] [iter=25] Checkpoint written, exiting with code 7
+[2026-11-23T20:02:14Z] [iter=25] PHASE END: enrich (checkpointed) elapsed_s=1814 elapsed_min=30.2 files_completed=20
