@@ -3,6 +3,7 @@
   "completed_files": [
     "scipy/integrate/__quadpack.h",
     "scipy/integrate/src/dop.c",
+    "scipy/io/_fast_matrix_market/fast_matrix_market/dependencies/fast_float/include/fast_float/fast_float.h",
     "scipy/io/_fast_matrix_market/fast_matrix_market/include/fast_matrix_market/field_conv.hpp",
     "scipy/linalg/_matfuncs_expm.c",
     "scipy/ndimage/src/ni_fourier.c",
@@ -28,7 +29,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz",
     "call_sites": 207425,
     "import_statements": 4953,
-    "call_targets_resolved": 4584,
+    "call_targets_resolved": 4742,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -42,5 +43,5 @@
     "extends_class_denormalized": 1249,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1812
+  "elapsed_seconds": 1834
 }
