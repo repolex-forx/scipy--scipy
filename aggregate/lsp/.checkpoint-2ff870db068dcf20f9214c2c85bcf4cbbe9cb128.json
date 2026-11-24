@@ -30,7 +30,8 @@
     "scipy/special/xsf_wrappers.cpp",
     "subprojects/qhull_r/libqhull_r/geom2_r.c",
     "subprojects/qhull_r/libqhull_r/io_r.c",
-    "subprojects/qhull_r/libqhull_r/merge_r.c"
+    "subprojects/qhull_r/libqhull_r/merge_r.c",
+    "subprojects/qhull_r/libqhull_r/stat_r.c"
   ],
   "completed_types": [],
   "stats": {
@@ -38,7 +39,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz",
     "call_sites": 207425,
     "import_statements": 4953,
-    "call_targets_resolved": 5685,
+    "call_targets_resolved": 5791,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -52,5 +53,5 @@
     "extends_class_denormalized": 1249,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1814
+  "elapsed_seconds": 1818
 }
