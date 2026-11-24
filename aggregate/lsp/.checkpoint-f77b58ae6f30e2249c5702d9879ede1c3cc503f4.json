@@ -3,6 +3,7 @@
   "completed_files": [
     "scipy/integrate/src/lsoda.c",
     "scipy/sparse/linalg/_eigen/arpack/arnaud/src/arnaud_n_double.c",
+    "scipy/sparse/linalg/_eigen/arpack/arnaud/src/arnaud_n_double_complex.c",
     "subprojects/qhull_r/libqhull_r/merge_r.c"
   ],
   "completed_types": [],
@@ -11,7 +12,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/f77b58ae6f30e2249c5702d9879ede1c3cc503f4.nq.gz",
     "call_sites": 207293,
     "import_statements": 4949,
-    "call_targets_resolved": 1618,
+    "call_targets_resolved": 1866,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -25,5 +26,5 @@
     "extends_class_denormalized": 1249,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1860
+  "elapsed_seconds": 1839
 }
