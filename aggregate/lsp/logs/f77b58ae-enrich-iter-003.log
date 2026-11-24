@@ -1,0 +1,17 @@
+[2026-11-24T11:07:51Z] === ENRICH ITERATION 3 START | repo=scipy/scipy sha=f77b58ae ===
+[2026-11-24T11:07:51Z] [iter=3] PHASE START: enrich repo=scipy/scipy sha=f77b58ae runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/f77b58ae-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/f77b58ae6f30e2249c5702d9879ede1c3cc503f4.nq.gz
+[2026-11-24T11:08:28Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-24T11:15:51Z] [iter=3] AST store loaded triples=27305411 load_secs=438 mem_mb=1049 MB
+[2026-11-24T11:15:51Z] [iter=3] Step 2: Finding LSP targets mem_mb=1049 MB
+[2026-11-24T11:16:46Z] [iter=3] LSP targets found call_sites=207293 imports=4949 extends=1284 implements=0 secs=54
+[2026-11-24T11:16:47Z] [iter=3] Loaded checkpoint partial graph triples=28042
+[2026-11-24T11:16:47Z] [iter=3] Primed enclosing-def cache from persisted triples entries=75
+[2026-11-24T11:17:26Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1049 MB
+[2026-11-24T11:19:12Z] [iter=3] Position index built positions=1743237 nodes_with_types=2194863 secs=107 mem_mb=3740 MB
+[2026-11-24T11:19:12Z] [iter=3] Step 3: Starting LSP resolution mem_mb=3740 MB already_completed_types=[] already_completed_files=1
+[2026-11-24T11:19:12Z] [iter=3] Resolving target type target_type=call_site count=207293
+[2026-11-24T11:19:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.4 files_done=0 resolved=0 errors=0 current=subprojects/qhull_r/libqhull_r/merge_r.c
+[2026-11-24T11:38:45Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.9 files_completed=1 new_files_this_iter=0 mem_mb=3748 MB
+[2026-11-24T11:38:45Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/f77b58ae6f30e2249c5702d9879ede1c3cc503f4.nq.gz triples=29576
+[2026-11-24T11:38:45Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-24T11:38:45Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1854 elapsed_min=30.9 files_completed=1
