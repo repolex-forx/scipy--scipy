@@ -1,0 +1,17 @@
+[2026-11-23T23:31:38Z] === ENRICH ITERATION 32 START | repo=scipy/scipy sha=2ff870db ===
+[2026-11-23T23:31:38Z] [iter=32] PHASE START: enrich repo=scipy/scipy sha=2ff870db runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2ff870db-enrich-iter-032.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz
+[2026-11-23T23:32:07Z] [iter=32] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T23:38:34Z] [iter=32] AST store loaded triples=27320830 load_secs=376 mem_mb=1056 MB
+[2026-11-23T23:38:34Z] [iter=32] Step 2: Finding LSP targets mem_mb=1056 MB
+[2026-11-23T23:39:57Z] [iter=32] LSP targets found call_sites=207425 imports=4953 extends=1284 implements=0 secs=83
+[2026-11-23T23:40:01Z] [iter=32] Loaded checkpoint partial graph triples=68616
+[2026-11-23T23:40:01Z] [iter=32] Primed enclosing-def cache from persisted triples entries=805
+[2026-11-23T23:41:01Z] [iter=32] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1056 MB
+[2026-11-23T23:44:29Z] [iter=32] Position index built positions=1744265 nodes_with_types=2196203 secs=209 mem_mb=3745 MB
+[2026-11-23T23:44:29Z] [iter=32] Step 3: Starting LSP resolution mem_mb=3745 MB already_completed_types=[] already_completed_files=30
+[2026-11-23T23:44:29Z] [iter=32] Resolving target type target_type=call_site count=207425
+[2026-11-23T23:44:34Z] [iter=32] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=0 resolved=0 errors=0 current=subprojects/qhull_r/libqhull_r/stat_r.c
+[2026-11-24T00:02:03Z] [iter=32] CHECKPOINT TRIGGERED elapsed_min=30.4 files_completed=30 new_files_this_iter=0 mem_mb=3753 MB
+[2026-11-24T00:02:03Z] [iter=32] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/2ff870db068dcf20f9214c2c85bcf4cbbe9cb128.nq.gz triples=69251
+[2026-11-24T00:02:04Z] [iter=32] Checkpoint written, exiting with code 7
+[2026-11-24T00:02:04Z] [iter=32] PHASE END: enrich (checkpointed) elapsed_s=1825 elapsed_min=30.4 files_completed=30
