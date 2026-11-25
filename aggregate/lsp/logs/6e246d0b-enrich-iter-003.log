@@ -1,0 +1,17 @@
+[2026-11-25T07:51:56Z] === ENRICH ITERATION 3 START | repo=scipy/scipy sha=6e246d0b ===
+[2026-11-25T07:51:56Z] [iter=3] PHASE START: enrich repo=scipy/scipy sha=6e246d0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/6e246d0b-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/6e246d0b54dd55dc69232a0caae6772228a7ac25.nq.gz
+[2026-11-25T07:52:26Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-25T07:58:11Z] [iter=3] AST store loaded triples=25551485 load_secs=335 mem_mb=1000 MB
+[2026-11-25T07:58:11Z] [iter=3] Step 2: Finding LSP targets mem_mb=1000 MB
+[2026-11-25T07:59:24Z] [iter=3] LSP targets found call_sites=191125 imports=4913 extends=1272 implements=0 secs=73
+[2026-11-25T07:59:26Z] [iter=3] Loaded checkpoint partial graph triples=31275
+[2026-11-25T07:59:26Z] [iter=3] Primed enclosing-def cache from persisted triples entries=107
+[2026-11-25T08:00:19Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1000 MB
+[2026-11-25T08:03:28Z] [iter=3] Position index built positions=1620010 nodes_with_types=2047148 secs=189 mem_mb=3529 MB
+[2026-11-25T08:03:28Z] [iter=3] Step 3: Starting LSP resolution mem_mb=3529 MB already_completed_types=[] already_completed_files=3
+[2026-11-25T08:03:28Z] [iter=3] Resolving target type target_type=call_site count=191125
+[2026-11-25T08:03:31Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=0 resolved=0 errors=0 current=scipy/linalg/tests/test_decomp.py
+[2026-11-25T08:22:28Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.5 files_completed=3 new_files_this_iter=0 mem_mb=3538 MB
+[2026-11-25T08:22:28Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/6e246d0b54dd55dc69232a0caae6772228a7ac25.nq.gz triples=34450
+[2026-11-25T08:22:28Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-25T08:22:28Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1832 elapsed_min=30.5 files_completed=3
