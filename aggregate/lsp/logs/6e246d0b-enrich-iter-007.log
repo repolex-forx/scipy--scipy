@@ -1,0 +1,17 @@
+[2026-11-25T10:04:23Z] === ENRICH ITERATION 7 START | repo=scipy/scipy sha=6e246d0b ===
+[2026-11-25T10:04:23Z] [iter=7] PHASE START: enrich repo=scipy/scipy sha=6e246d0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/6e246d0b-enrich-iter-007.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/6e246d0b54dd55dc69232a0caae6772228a7ac25.nq.gz
+[2026-11-25T10:04:58Z] [iter=7] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-25T10:11:49Z] [iter=7] AST store loaded triples=25551485 load_secs=405 mem_mb=1029 MB
+[2026-11-25T10:11:49Z] [iter=7] Step 2: Finding LSP targets mem_mb=1029 MB
+[2026-11-25T10:12:42Z] [iter=7] LSP targets found call_sites=191125 imports=4913 extends=1272 implements=0 secs=53
+[2026-11-25T10:12:44Z] [iter=7] Loaded checkpoint partial graph triples=44879
+[2026-11-25T10:12:44Z] [iter=7] Primed enclosing-def cache from persisted triples entries=163
+[2026-11-25T10:13:21Z] [iter=7] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1029 MB
+[2026-11-25T10:15:05Z] [iter=7] Position index built positions=1620010 nodes_with_types=2047148 secs=103 mem_mb=3614 MB
+[2026-11-25T10:15:05Z] [iter=7] Step 3: Starting LSP resolution mem_mb=3614 MB already_completed_types=[] already_completed_files=5
+[2026-11-25T10:15:05Z] [iter=7] Resolving target type target_type=call_site count=191125
+[2026-11-25T10:15:06Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=0 resolved=0 errors=0 current=scipy/optimize/tests/test_optimize.py
+[2026-11-25T10:34:27Z] [iter=7] CHECKPOINT TRIGGERED elapsed_min=30.1 files_completed=5 new_files_this_iter=0 mem_mb=3625 MB
+[2026-11-25T10:34:27Z] [iter=7] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/6e246d0b54dd55dc69232a0caae6772228a7ac25.nq.gz triples=48457
+[2026-11-25T10:34:28Z] [iter=7] Checkpoint written, exiting with code 7
+[2026-11-25T10:34:28Z] [iter=7] PHASE END: enrich (checkpointed) elapsed_s=1804 elapsed_min=30.1 files_completed=5
