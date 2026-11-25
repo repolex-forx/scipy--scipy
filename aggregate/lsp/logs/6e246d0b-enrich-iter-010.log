@@ -1,0 +1,20 @@
+[2026-11-25T11:44:34Z] === ENRICH ITERATION 10 START | repo=scipy/scipy sha=6e246d0b ===
+[2026-11-25T11:44:34Z] [iter=10] PHASE START: enrich repo=scipy/scipy sha=6e246d0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/6e246d0b-enrich-iter-010.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/6e246d0b54dd55dc69232a0caae6772228a7ac25.nq.gz
+[2026-11-25T11:45:08Z] [iter=10] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-25T11:52:49Z] [iter=10] AST store loaded triples=25551485 load_secs=453 mem_mb=1072 MB
+[2026-11-25T11:52:49Z] [iter=10] Step 2: Finding LSP targets mem_mb=1072 MB
+[2026-11-25T11:53:49Z] [iter=10] LSP targets found call_sites=191125 imports=4913 extends=1272 implements=0 secs=60
+[2026-11-25T11:53:51Z] [iter=10] Loaded checkpoint partial graph triples=52410
+[2026-11-25T11:53:51Z] [iter=10] Primed enclosing-def cache from persisted triples entries=250
+[2026-11-25T11:54:37Z] [iter=10] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1072 MB
+[2026-11-25T11:56:43Z] [iter=10] Position index built positions=1620010 nodes_with_types=2047148 secs=126 mem_mb=3585 MB
+[2026-11-25T11:56:43Z] [iter=10] Step 3: Starting LSP resolution mem_mb=3585 MB already_completed_types=[] already_completed_files=7
+[2026-11-25T11:56:43Z] [iter=10] Resolving target type target_type=call_site count=191125
+[2026-11-25T11:56:46Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=0 resolved=0 errors=0 current=scipy/special/tests/test_logsumexp.py
+[2026-11-25T12:04:04Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=19.5 files_done=1 resolved=72 errors=0 current=scipy/sparse/tests/test_matrix_io.py
+[2026-11-25T12:06:43Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=2 resolved=122 errors=0 current=scipy/optimize/_lsq/least_squares.py
+[2026-11-25T12:10:56Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=26.4 files_done=3 resolved=231 errors=0 current=scipy/stats/tests/test_distributions.py
+[2026-11-25T12:14:51Z] [iter=10] CHECKPOINT TRIGGERED elapsed_min=30.3 files_completed=10 new_files_this_iter=3 mem_mb=3596 MB
+[2026-11-25T12:14:51Z] [iter=10] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/6e246d0b54dd55dc69232a0caae6772228a7ac25.nq.gz triples=55373
+[2026-11-25T12:14:52Z] [iter=10] Checkpoint written, exiting with code 7
+[2026-11-25T12:14:52Z] [iter=10] PHASE END: enrich (checkpointed) elapsed_s=1817 elapsed_min=30.3 files_completed=10
