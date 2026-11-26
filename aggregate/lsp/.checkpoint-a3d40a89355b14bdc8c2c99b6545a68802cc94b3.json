@@ -3,9 +3,11 @@
   "completed_files": [
     "scipy/fft/_pocketfft/pypocketfft.cxx",
     "scipy/integrate/__quadpack.h",
+    "scipy/interpolate/src/_fitpackmodule.c",
     "scipy/io/_fast_matrix_market/fast_matrix_market/dependencies/fast_float/include/fast_float/fast_float.h",
     "scipy/io/_fast_matrix_market/fast_matrix_market/dependencies/ryu/ryu/d2s.c",
     "scipy/linalg/_matfuncs_expm.c",
+    "scipy/ndimage/src/nd_image.c",
     "scipy/ndimage/src/ni_interpolation.c",
     "scipy/signal/_sigtoolsmodule.c",
     "scipy/sparse/sparsetools/complex_ops.h",
@@ -16,10 +18,13 @@
     "scipy/spatial/qhull_src/src/rboxlib_r.c",
     "scipy/special/cdflib.c",
     "scipy/special/xsf/amos/amos.h",
+    "scipy/special/xsf/cephes/ellik.h",
     "scipy/special/xsf/cephes/k0.h",
     "scipy/special/xsf/cephes/scipy_iv.h",
+    "scipy/special/xsf/cephes/sindg.h",
     "scipy/special/xsf/mathieu.h",
-    "scipy/special/xsf/par_cyl.h"
+    "scipy/special/xsf/par_cyl.h",
+    "scipy/special/xsf/specfun/specfun.h"
   ],
   "completed_types": [],
   "stats": {
@@ -27,7 +32,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz",
     "call_sites": 191116,
     "import_statements": 4912,
-    "call_targets_resolved": 5253,
+    "call_targets_resolved": 5634,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -41,5 +46,5 @@
     "extends_class_denormalized": 1237,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1822
+  "elapsed_seconds": 1805
 }
