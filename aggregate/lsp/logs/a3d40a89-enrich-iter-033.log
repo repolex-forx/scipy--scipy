@@ -1,0 +1,21 @@
+[2026-11-26T11:53:27Z] === ENRICH ITERATION 33 START | repo=scipy/scipy sha=a3d40a89 ===
+[2026-11-26T11:53:27Z] [iter=33] PHASE START: enrich repo=scipy/scipy sha=a3d40a89 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a3d40a89-enrich-iter-033.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz
+[2026-11-26T11:54:02Z] [iter=33] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-26T12:01:30Z] [iter=33] AST store loaded triples=25550267 load_secs=440 mem_mb=966 MB
+[2026-11-26T12:01:30Z] [iter=33] Step 2: Finding LSP targets mem_mb=966 MB
+[2026-11-26T12:02:34Z] [iter=33] LSP targets found call_sites=191116 imports=4912 extends=1272 implements=0 secs=64
+[2026-11-26T12:02:37Z] [iter=33] Loaded checkpoint partial graph triples=82844
+[2026-11-26T12:02:37Z] [iter=33] Primed enclosing-def cache from persisted triples entries=791
+[2026-11-26T12:03:23Z] [iter=33] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=966 MB
+[2026-11-26T12:05:32Z] [iter=33] Position index built positions=1619932 nodes_with_types=2047043 secs=129 mem_mb=3574 MB
+[2026-11-26T12:05:32Z] [iter=33] Step 3: Starting LSP resolution mem_mb=3574 MB already_completed_types=[] already_completed_files=27
+[2026-11-26T12:05:32Z] [iter=33] Resolving target type target_type=call_site count=191116
+[2026-11-26T12:05:35Z] [iter=33] HEARTBEAT target_type=call_site elapsed_min=12.1 files_done=0 resolved=0 errors=0 current=scipy/spatial/qhull_src/src/merge_r.c
+[2026-11-26T12:10:24Z] [iter=33] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=1 resolved=36 errors=0 current=scipy/integrate/__quadpack.c
+[2026-11-26T12:16:00Z] [iter=33] HEARTBEAT target_type=call_site elapsed_min=22.6 files_done=2 resolved=417 errors=0 current=scipy/sparse/linalg/_dsolve/SuperLU/SRC/cgstrf.c
+[2026-11-26T12:20:49Z] [iter=33] HEARTBEAT target_type=call_site elapsed_min=27.4 files_done=3 resolved=453 errors=0 current=scipy/special/xsf/cephes/chdtr.h
+[2026-11-26T12:21:29Z] [iter=33] HEARTBEAT target_type=call_site elapsed_min=28.0 files_done=4 resolved=460 errors=0 current=scipy/_lib/_uarray/_uarray_dispatch.cxx
+[2026-11-26T12:23:36Z] [iter=33] CHECKPOINT TRIGGERED elapsed_min=30.2 files_completed=31 new_files_this_iter=4 mem_mb=3580 MB
+[2026-11-26T12:23:36Z] [iter=33] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz triples=86601
+[2026-11-26T12:23:37Z] [iter=33] Checkpoint written, exiting with code 7
+[2026-11-26T12:23:37Z] [iter=33] PHASE END: enrich (checkpointed) elapsed_s=1809 elapsed_min=30.2 files_completed=31
