@@ -1,0 +1,17 @@
+[2026-11-26T03:54:29Z] === ENRICH ITERATION 19 START | repo=scipy/scipy sha=a3d40a89 ===
+[2026-11-26T03:54:29Z] [iter=19] PHASE START: enrich repo=scipy/scipy sha=a3d40a89 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a3d40a89-enrich-iter-019.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz
+[2026-11-26T03:54:59Z] [iter=19] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-26T04:00:38Z] [iter=19] AST store loaded triples=25550267 load_secs=329 mem_mb=1061 MB
+[2026-11-26T04:00:38Z] [iter=19] Step 2: Finding LSP targets mem_mb=1061 MB
+[2026-11-26T04:01:47Z] [iter=19] LSP targets found call_sites=191116 imports=4912 extends=1272 implements=0 secs=69
+[2026-11-26T04:01:50Z] [iter=19] Loaded checkpoint partial graph triples=57429
+[2026-11-26T04:01:50Z] [iter=19] Primed enclosing-def cache from persisted triples entries=511
+[2026-11-26T04:02:40Z] [iter=19] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1061 MB
+[2026-11-26T04:05:46Z] [iter=19] Position index built positions=1619932 nodes_with_types=2047043 secs=185 mem_mb=3612 MB
+[2026-11-26T04:05:46Z] [iter=19] Step 3: Starting LSP resolution mem_mb=3612 MB already_completed_types=[] already_completed_files=18
+[2026-11-26T04:05:46Z] [iter=19] Resolving target type target_type=call_site count=191116
+[2026-11-26T04:05:49Z] [iter=19] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=0 resolved=0 errors=0 current=scipy/spatial/qhull_src/src/io_r.c
+[2026-11-26T04:24:45Z] [iter=19] CHECKPOINT TRIGGERED elapsed_min=30.3 files_completed=18 new_files_this_iter=0 mem_mb=3620 MB
+[2026-11-26T04:24:45Z] [iter=19] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz triples=58227
+[2026-11-26T04:24:46Z] [iter=19] Checkpoint written, exiting with code 7
+[2026-11-26T04:24:46Z] [iter=19] PHASE END: enrich (checkpointed) elapsed_s=1816 elapsed_min=30.3 files_completed=18
