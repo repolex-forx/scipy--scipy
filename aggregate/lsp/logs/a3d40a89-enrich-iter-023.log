@@ -1,0 +1,17 @@
+[2026-11-26T06:14:14Z] === ENRICH ITERATION 23 START | repo=scipy/scipy sha=a3d40a89 ===
+[2026-11-26T06:14:14Z] [iter=23] PHASE START: enrich repo=scipy/scipy sha=a3d40a89 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a3d40a89-enrich-iter-023.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz
+[2026-11-26T06:14:42Z] [iter=23] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-11-26T06:22:25Z] [iter=23] AST store loaded triples=25550267 load_secs=455 mem_mb=963 MB
+[2026-11-26T06:22:25Z] [iter=23] Step 2: Finding LSP targets mem_mb=963 MB
+[2026-11-26T06:23:23Z] [iter=23] LSP targets found call_sites=191116 imports=4912 extends=1272 implements=0 secs=58
+[2026-11-26T06:23:25Z] [iter=23] Loaded checkpoint partial graph triples=64916
+[2026-11-26T06:23:25Z] [iter=23] Primed enclosing-def cache from persisted triples entries=582
+[2026-11-26T06:24:09Z] [iter=23] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=963 MB
+[2026-11-26T06:26:14Z] [iter=23] Position index built positions=1619932 nodes_with_types=2047043 secs=125 mem_mb=3540 MB
+[2026-11-26T06:26:14Z] [iter=23] Step 3: Starting LSP resolution mem_mb=3540 MB already_completed_types=[] already_completed_files=19
+[2026-11-26T06:26:14Z] [iter=23] Resolving target type target_type=call_site count=191116
+[2026-11-26T06:26:17Z] [iter=23] HEARTBEAT target_type=call_site elapsed_min=12.0 files_done=0 resolved=0 errors=0 current=scipy/special/xsf/specfun/specfun.h
+[2026-11-26T06:44:37Z] [iter=23] CHECKPOINT TRIGGERED elapsed_min=30.4 files_completed=19 new_files_this_iter=0 mem_mb=3551 MB
+[2026-11-26T06:44:37Z] [iter=23] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz triples=70311
+[2026-11-26T06:44:38Z] [iter=23] Checkpoint written, exiting with code 7
+[2026-11-26T06:44:38Z] [iter=23] PHASE END: enrich (checkpointed) elapsed_s=1823 elapsed_min=30.4 files_completed=19
