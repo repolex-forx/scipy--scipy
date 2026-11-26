@@ -1,0 +1,20 @@
+[2026-11-26T01:05:21Z] === ENRICH ITERATION 14 START | repo=scipy/scipy sha=a3d40a89 ===
+[2026-11-26T01:05:21Z] [iter=14] PHASE START: enrich repo=scipy/scipy sha=a3d40a89 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a3d40a89-enrich-iter-014.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz
+[2026-11-26T01:05:48Z] [iter=14] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-11-26T01:14:28Z] [iter=14] AST store loaded triples=25550267 load_secs=511 mem_mb=1021 MB
+[2026-11-26T01:14:28Z] [iter=14] Step 2: Finding LSP targets mem_mb=1021 MB
+[2026-11-26T01:15:25Z] [iter=14] LSP targets found call_sites=191116 imports=4912 extends=1272 implements=0 secs=57
+[2026-11-26T01:15:27Z] [iter=14] Loaded checkpoint partial graph triples=51149
+[2026-11-26T01:15:27Z] [iter=14] Primed enclosing-def cache from persisted triples entries=378
+[2026-11-26T01:16:11Z] [iter=14] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1021 MB
+[2026-11-26T01:18:14Z] [iter=14] Position index built positions=1619932 nodes_with_types=2047043 secs=123 mem_mb=3512 MB
+[2026-11-26T01:18:14Z] [iter=14] Step 3: Starting LSP resolution mem_mb=3512 MB already_completed_types=[] already_completed_files=12
+[2026-11-26T01:18:14Z] [iter=14] Resolving target type target_type=call_site count=191116
+[2026-11-26T01:18:17Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=0 resolved=0 errors=0 current=scipy/spatial/qhull_src/src/qset_r.c
+[2026-11-26T01:24:54Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=19.5 files_done=1 resolved=48 errors=0 current=scipy/special/xsf/mathieu.h
+[2026-11-26T01:27:13Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=21.9 files_done=2 resolved=86 errors=0 current=scipy/special/xsf/cephes/scipy_iv.h
+[2026-11-26T01:30:57Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=25.6 files_done=3 resolved=165 errors=0 current=scipy/spatial/ckdtree/src/query_ball_tree.cxx
+[2026-11-26T01:35:52Z] [iter=14] CHECKPOINT TRIGGERED elapsed_min=30.5 files_completed=15 new_files_this_iter=3 mem_mb=3520 MB
+[2026-11-26T01:35:52Z] [iter=14] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz triples=52735
+[2026-11-26T01:35:52Z] [iter=14] Checkpoint written, exiting with code 7
+[2026-11-26T01:35:52Z] [iter=14] PHASE END: enrich (checkpointed) elapsed_s=1830 elapsed_min=30.5 files_completed=15
