@@ -9,7 +9,9 @@
     "scipy/linalg/_matfuncs_expm.c",
     "scipy/ndimage/src/nd_image.c",
     "scipy/ndimage/src/ni_interpolation.c",
+    "scipy/optimize/rectangular_lsap/rectangular_lsap.cpp",
     "scipy/signal/_sigtoolsmodule.c",
+    "scipy/sparse/linalg/_dsolve/SuperLU/SRC/dgsrfs.c",
     "scipy/sparse/sparsetools/complex_ops.h",
     "scipy/spatial/ckdtree/src/query_ball_tree.cxx",
     "scipy/spatial/ckdtree/src/sparse_distances.cxx",
@@ -24,7 +26,8 @@
     "scipy/special/xsf/cephes/sindg.h",
     "scipy/special/xsf/mathieu.h",
     "scipy/special/xsf/par_cyl.h",
-    "scipy/special/xsf/specfun/specfun.h"
+    "scipy/special/xsf/specfun/specfun.h",
+    "scipy/stats/biasedurn/stoc1.cpp"
   ],
   "completed_types": [],
   "stats": {
@@ -32,7 +35,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/a3d40a89355b14bdc8c2c99b6545a68802cc94b3.nq.gz",
     "call_sites": 191116,
     "import_statements": 4912,
-    "call_targets_resolved": 5634,
+    "call_targets_resolved": 5819,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -46,5 +49,5 @@
     "extends_class_denormalized": 1237,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1805
+  "elapsed_seconds": 1833
 }
